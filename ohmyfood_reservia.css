@@ -135,6 +135,7 @@ header{
     align-items: center;
     background-color: rgb(246, 246, 246);
     padding-top: 35px;
+    padding-bottom: 50px;
 }
 
 .rest img{
@@ -154,18 +155,94 @@ header{
   margin-bottom: 20px;
 }
 
-.text_rest{
-    align-self: flex-start;
-    padding-left: 20px;
-    line-height: 13px;
-    color: #000000;
+.text_rest strong{
+    font-size: 18px;
 }
 
-.text_rest:link{
+.heart i{
+    position: relative;
+    bottom: 44px;
+    left: 100px;
+    font-size: 25px;
+    color: black;
+}
+
+@media screen and (max-width: 350px)
+{
+    .rest img{
+        width: 270px;
+        height: 160px;
+    }
+    .rest{
+        width: 270px;
+    }
+    .text_rest i{
+        margin-left: 70px;
+    }
+    .fran i {
+        margin-left: 105px;
+    }
+}
+
+.text_rest{
+    align-self: flex-start;
+    line-height: 13px;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.text_rest i{
+    margin-left: 110px;
+    font-size: 20px;
+}
+
+.text_rest p:link{
     text-decoration: none;
+}
+
+.fran i{
+    margin-left: 150px;
 }
 
 .bloc_03 h2{
     align-self: flex-start;
     padding-left: 20px;
+}
+
+footer{
+    padding-top: 40px;
+    background-color: rgb(53, 53, 53);
+    color: #ffffff;
+    padding-bottom: 35px;
+    line-height: 1px;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+footer img{
+    width: 23%;
+    color: #ffffff;
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+footer img:link{
+    fill: white;
+}
+
+.elem_footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer div{
+    margin-left: 20px;
+}
+
+.elem_footer i{
+    padding-right: 10px;
 }
