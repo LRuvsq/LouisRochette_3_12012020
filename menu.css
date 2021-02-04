@@ -1,0 +1,63 @@
+body{
+    width: 100%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    padding-top: 23px;
+}
+
+header a{
+    display: inline;
+    position: relative;
+    left: 20px;
+    color: black;
+    top: 6px;
+}
+
+.logo{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.logo img{
+    width: 44%;
+}
+
+.bloc_01 img{
+    width: 100%;
+    height: 300px;
+}
+
+.nom_rest{
+    display: inline;
+    position: absolute;
+    top: 250px;
+    left: 0px;
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    margin-top: 60px;
+    border-radius: 60px;
+}
+
+.nom_rest i{
+    display: inline;
+    position: relative;
+    top: 30px;
+    left: 140px;
+    font-size: 25px;
+}
+
+.nom_rest p{
+    display: inline;
+    position: relative;
+    top: 30px;
+    left: 40px;
+    font-size: 28px;
+}
