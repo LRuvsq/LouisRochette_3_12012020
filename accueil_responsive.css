@@ -188,12 +188,12 @@ header{
 
 .rest:focus
 {
-outline:0;
+    outline:0;
 } 
 
 .rest:link 
 { 
- text-decoration:none; 
+    text-decoration:none; 
 } 
 
 .text_rest strong{
