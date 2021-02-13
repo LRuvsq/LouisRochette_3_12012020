@@ -1,37 +1,11 @@
+
 .logo img {
     width: 15%;
 }
 
-.bloc_01 img {
-    width: 50%;
-    height: 300px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.bloc_01 div {
-    background-color: rgb(246, 246, 246);
-    display: flex;
-    justify-content: center;
-}
 
-.nom_rest p {
-    margin-top: 0px;
-}
 
-.nom_rest i {
-    margin-top: 10px;
-}
-
-.text_plat {
-    width: 25%;
-}
-
-.bloc_02 {
-    display: flex;
-    flex-direction: row;
-}
 
 footer{
     align-items: center;
