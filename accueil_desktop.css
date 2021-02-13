@@ -1,0 +1,42 @@
+.logo {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bt {
+    width: 90%;
+}
+
+.bouton_recherche{
+    display: flex;
+    flex-direction: row;
+}
+
+.bloc_03 {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
+    align-items: center;
+    background-color: rgb(246, 246, 246);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.rest{
+    margin-right: 20px;
+}
+
+footer img{
+    width: 15%;
+}
+
+footer{
+    align-items: center;
+}
