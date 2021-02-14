@@ -4,39 +4,35 @@ body{
     font-family: 'Roboto', sans-serif;   
 }
 
-.lds-dual-ring {
+.spinner {
     display: inline;
     position: absolute;
     width: 100%;
     height:100%;
     z-index: 10001;
-    overflow: hidden;
-    background-color: #000000;
-    opacity: 0.7;
-    
 }
 
-.lds-dual-ring:after {
+.spinner:after {
     content: " ";
     display: block;
     width: 280px;
     height: 280px;
     margin:auto;
+    margin-top: 150px;
     border-radius: 50%;
     border: 6px solid violet;
     border-color: violet transparent violet transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
-    margin-top: 30px;
+    animation: spinner 1s linear 3s;
+    animation-fill-mode: forwards;
 }
 
-@keyframes lds-dual-ring {
+@keyframes spinner {
     0% {
-        transform: rotate(0deg);
-        transition-duration: 1.5s;
+       transform: rotate(0deg);
     }
     100% {
         transform: rotate(360deg);
-        transition-duration: 1.5s;
+        border-color: transparent;
     }
 }
 
@@ -142,7 +138,59 @@ body{
     border-radius: 15px;
     padding-left: 10px;
     box-shadow: 0px 2px 3px 2px rgb(221, 216, 216);
+    opacity: 0;
 }
+
+.un{
+    animation: retard 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 3.5s;
+}
+
+.deux{
+    animation: retard_deux 1s;
+    animation-delay: 3.9s;
+    animation-fill-mode: forwards;
+}
+
+.trois{
+    animation: retard_deux 1s;
+    animation-delay: 4.3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes retard {
+    0% {
+        margin-top: 40px;
+       opacity: 0;
+     }
+     100% {
+         margin-top: 12;
+         opacity: 1;
+     }
+}
+
+@keyframes retard_deux {
+    0% {
+        margin-top: 40px;
+       opacity: 0;
+     }
+     100% {
+         margin-top: 12;
+         opacity: 1;
+     }
+ }
+
+@keyframes retard_trois {
+    0% {
+        margin-top: 40px;
+       opacity: 0;
+     }
+     100% {
+         margin-top: 12;
+         opacity: 1;
+     }
+ }
 
 .bloc_02{
     margin-top: 43px;
