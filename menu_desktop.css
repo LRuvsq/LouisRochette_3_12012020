@@ -3,9 +3,21 @@
     width: 15%;
 }
 
+.bloc_01 img {
+    width: 50%;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.text_plat {
+    width: 28%;
+}
 
-
+.bloc_02 {
+    display: flex;
+}
 
 footer{
     align-items: center;

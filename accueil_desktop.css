@@ -17,6 +17,14 @@
     flex-direction: row;
 }
 
+.bloc_02 div {
+    width: 100%;
+    display: flex;
+    padding-bottom: 20px;
+    flex-direction: row;
+    align-items: center;
+}
+
 .bloc_03 {
     display: flex;
     flex-direction: row;
@@ -30,7 +38,7 @@
 }
 
 .rest{
-    
+    margin-left: 20px;
 }
 
 footer img{
