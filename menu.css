@@ -91,7 +91,6 @@ body{
     height: 100%;
 }
 
-
 .nom_rest {
     display: inline;
     position: absolute;
@@ -122,17 +121,20 @@ body{
     font-family: 'Shrikhand', cursive;
 }
 
-.text_plat strong p{
+.text_plat strong p {
     font-size: 17px;
+    margin-bottom: 3px;
+    padding-right: 65px;
 }
 
 .text_plat{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     line-height: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
     margin-top: 12px;
     background-color: #ffffff;
     border-radius: 15px;
@@ -141,39 +143,62 @@ body{
     opacity: 0;
     position: relative;
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .partie_g{
-    height: 79px;
-    position: absolute;
-    flex: 4;
+    width: 100%;
+}
+
+.g_prix{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .partie_d{
-    position: absolute;
-    right: 0px;
-    top: 0px;
-    flex: 2;
-    height: 78px;
     background-color: rgb(153,226,208);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    transition: width 2s linear 1s;
+    transition: width 0.3s linear 0s;
 }
 
 .partie_d i {
-    margin-left: 25px;
-    margin-top: 30px;
+    margin-left: 20px;
+    margin-top: 25px;
     font-size: 20px;
     background-color: rgb(153,226,208);
     border-radius: 50px;
     color: #ffffff;
 }
 
-.text_plat:hover{
-    width: ;
+.text_plat:hover .partie_d
+{
+    width: 77px;
+}
+.partie_d{
+    width: 0;
 }
 
+.text_plat:hover .partie_d i
+{
+    visibility: visible;  
+    animation: retard 0.3s linear;
+    animation-delay: 0s;
+}
+.partie_d i{
+    visibility: hidden;
+}
+
+@keyframes retard {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .un{
     animation: retard 1s;
@@ -249,6 +274,7 @@ body{
 
 .text_plat p{
     font-size: 14px;
+    padding-right: 10px;
 }
 
 .bouton{
