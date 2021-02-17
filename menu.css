@@ -5,35 +5,38 @@ body{
 }
 
 .spinner {
-    display: inline;
     position: absolute;
-    width: 100%;
-    height:100%;
-    z-index: 10001;
-}
-
-.spinner:after {
-    content: " ";
-    display: block;
-    width: 280px;
-    height: 280px;
-    margin:auto;
-    margin-top: 150px;
+    border: 16px solid #e4e4e4;
+    border-top: 16px solid rgb(221,110,218);
     border-radius: 50%;
-    border: 6px solid violet;
-    border-color: violet transparent violet transparent;
-    animation: spinner 1s linear 3s;
-    animation-fill-mode: forwards;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    animation: spin 3s linear, opacity 3.0s;
+    top: 18%;
+    right: 31%;
+    z-index: 999;
 }
 
-@keyframes spinner {
-    0% {
-       transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-        border-color: transparent;
-    }
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  @keyframes opacity {
+      0% { opacity: 100%;}
+      95% { opacity: 100%;}
+      100% { opacity: 0;}
+  }
+
+main {
+    opacity:1;
+    animation: opacity_main 3s;
+}
+
+@keyframes opacity_main {
+    0% { opacity: 0.3;}
+    100% { opacity: 0.3;}
 }
 
 header{
@@ -161,14 +164,14 @@ body{
     background-color: rgb(153,226,208);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    transition: width 0.3s linear 0s;
+    transition: width 0.5s linear 0s;
 }
 
 .partie_d i {
     margin-left: 20px;
     margin-top: 25px;
     font-size: 20px;
-    background-color: rgb(153,226,208);
+    background-color: #99e2d0;
     border-radius: 50px;
     color: #ffffff;
 }
@@ -177,26 +180,46 @@ body{
 {
     width: 77px;
 }
+
 .partie_d{
     width: 0;
 }
 
 .text_plat:hover .partie_d i
 {
-    visibility: visible;  
-    animation: retard 0.3s linear;
-    animation-delay: 0s;
-}
-.partie_d i{
+    animation-name: pat 3s;
+    animation: tourne 0.6s linear;
     visibility: hidden;
 }
 
-@keyframes retard {
+.partie_d i{
+    visibility: visible;
+}
+
+@keyframes tourne {
     0% {
        transform: rotate(0deg);
     }
+    50% {
+        transform: rotate(360deg);
+    }
+    52% {
+        transform: rotate(0deg);
+    }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes pat {
+    0% {
+      color:unset;
+    }
+    30%{
+        color: transparent;
+    }
+    100% {
+        color: transparent;
     }
 }
 
