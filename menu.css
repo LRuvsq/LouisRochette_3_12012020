@@ -150,30 +150,36 @@ body{
     justify-content: space-between;
 }
 
-.partie_g{
+.g_prix{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
 }
 
-.g_prix{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.nom_plat{
+    width: 100%; 
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; 
 }
 
 .partie_d{
     background-color: rgb(153,226,208);
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-    transition: width 0.5s linear 0s;
+    transition: width 0.3s linear 0s;
 }
 
-.partie_d i {
-    margin-left: 20px;
-    margin-top: 25px;
-    font-size: 20px;
-    background-color: #99e2d0;
+.text_plat span {
     border-radius: 50px;
+    background-color: #99e2d0;
     color: #ffffff;
+    position: absolute;
+    top: 25px;
+    visibility: visible;
+    transition: margin 0.3s linear 0s;
+    left: 80%;
+    margin-left: 53px;
 }
 
 .text_plat:hover .partie_d
@@ -185,41 +191,26 @@ body{
     width: 0;
 }
 
-.text_plat:hover .partie_d i
+.text_plat:hover span
 {
-    animation-name: pat 3s;
-    animation: tourne 0.6s linear;
+    margin-left: 30px;
+    visibility: visible;
+    animation: tourne 0.3s;
+    animation-delay: 0.2s;
+}
+
+.text_plat span{
+    margin-left: 53px;
     visibility: hidden;
 }
 
-.partie_d i{
-    visibility: visible;
-}
 
 @keyframes tourne {
     0% {
        transform: rotate(0deg);
     }
-    50% {
-        transform: rotate(360deg);
-    }
-    52% {
-        transform: rotate(0deg);
-    }
     100% {
         transform: rotate(360deg);
-    }
-}
-
-@keyframes pat {
-    0% {
-      color:unset;
-    }
-    30%{
-        color: transparent;
-    }
-    100% {
-        color: transparent;
     }
 }
 
