@@ -152,6 +152,12 @@ header{
     font-weight: bold;
 }
 
+@media screen and (min-width: 460px){
+    .bt{
+        width: 379px;
+    }
+}
+
 .a_bt{
     display: flex;
     justify-content: center;
