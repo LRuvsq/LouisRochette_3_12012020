@@ -12,7 +12,10 @@
 }
 
 .text_plat {
-    width: 28%;
+    width: 341px;
+    margin: 0;
+    margin-top: 20px;
+    margin-left: 20px;
 }
 
 .bloc_02 {
@@ -22,7 +25,7 @@
 
 .bloc_menu{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 93%;
 }
 
