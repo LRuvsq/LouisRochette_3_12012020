@@ -23,6 +23,7 @@
 .bloc_menu{
     display: flex;
     flex-direction: row;
+    width: 93%;
 }
 
 footer{
