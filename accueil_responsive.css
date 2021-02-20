@@ -288,11 +288,18 @@ header{
     .rest{
         width: 270px;
     }
-    .text_rest i{
-        margin-left: 70px;
-    }
     .fran i {
         margin-left: 105px;
+    }
+    .text_rest strong{
+        font-size: 14px;
+    }
+    .text_rest span p{
+        font-size: 13px;
+    }
+    .jauge_remplissage i{
+        margin-left: 100px;
+        font-size: 18px;
     }
 }
 
@@ -307,7 +314,7 @@ header{
 }
 
 .text_rest i{
-    margin-left: 110px;
+    margin-left: 130px;
     font-size: 20px;
 }
 
@@ -320,7 +327,7 @@ header{
 }
 
 .fran i{
-    margin-left: 150px;
+    margin-left: 165px;
 }
 
 .bloc_03 h2{
