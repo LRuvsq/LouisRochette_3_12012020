@@ -4,41 +4,6 @@ body{
     font-family: 'Roboto', sans-serif;   
 }
 
-.spinner {
-    position: absolute;
-    border: 16px solid #e4e4e4;
-    border-top: 16px solid rgb(221,110,218);
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    opacity: 0;
-    animation: spin 3s linear, opacity 3.0s;
-    top: 18%;
-    right: 31%;
-    z-index: 999;
-}
-
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-
-  @keyframes opacity {
-      0% { opacity: 100%;}
-      95% { opacity: 100%;}
-      100% { opacity: 0;}
-  }
-
-main {
-    opacity:1;
-    animation: opacity_main 3s;
-}
-
-@keyframes opacity_main {
-    0% { opacity: 0.3;}
-    100% { opacity: 0.3;}
-}
-
 header{
     display: flex;
     flex-direction: row;
