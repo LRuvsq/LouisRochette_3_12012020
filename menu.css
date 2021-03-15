@@ -115,18 +115,30 @@ body{
     justify-content: space-between;
 }
 
+.text_plat {
+    line-height: 15px;
+}
+
 .g_prix{
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
+.text_plat strong p {
+    font-size: 17px;
+    margin-bottom: 3px;
+    padding-right: 65px;
+    wrap: no-wrap;
+    white-space: nowrap;
+}
+
 .text_plat:hover .g_prix {
     display: flex;
 }
 
 .text_plat:hover .g_prix {
-    width: 80%;
+    width: 95%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -138,6 +150,10 @@ body{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis; 
+}
+
+.partie_g{
+    width: 100%;
 }
 
 .partie_d{
@@ -166,6 +182,11 @@ body{
 
 .partie_d{
     width: 0;
+}
+
+.fa-check-circle {
+    font-weight: 900;
+    margin-left: 3px;
 }
 
 .text_plat:hover span
@@ -263,9 +284,10 @@ body{
     font-weight: 300;
 }
 
-.text_plat p{
+.text_plat p {
     font-size: 14px;
     padding-right: 10px;
+    margin-top: 10px;
 }
 
 .bouton{

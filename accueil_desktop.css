@@ -8,6 +8,10 @@
     justify-content: center;
 }
 
+.spinner{
+    display: none;
+}
+
 .bt {
     width: 90%;
 }
