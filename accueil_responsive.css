@@ -472,6 +472,11 @@ footer div{
     margin-left: 20px;
 }
 
-.elem_footer i{
+.two i{
     padding-right: 10px;
+}
+
+.one i {
+    font-size: 18px;
+    padding-right: 16px;
 }
