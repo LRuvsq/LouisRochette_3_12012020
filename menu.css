@@ -26,7 +26,7 @@ header a{
 }
 
 .logo img{
-    width: 44%;
+    width: 34%;
 }
 
 .bloc_01 img{
@@ -121,7 +121,7 @@ body{
 
 .partie_g{
     width: 100%;
-    transition: width 1s;
+    transition: width 0.7s;
 }
 
 .g_prix{
@@ -175,7 +175,6 @@ body{
     white-space: nowrap;
     text-overflow: ellipsis; 
 }
-
 
 .partie_d{
     background-color: rgb(153,226,208);
