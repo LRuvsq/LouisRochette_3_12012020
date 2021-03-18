@@ -1,3 +1,4 @@
+
 .logo {
     width: 30%;
     display: flex;
@@ -9,7 +10,9 @@
 }
 
 .spinner{
-    display: none;
+    display: unset;
+    top: 8%;
+    right: 36%;
 }
 
 .bt {

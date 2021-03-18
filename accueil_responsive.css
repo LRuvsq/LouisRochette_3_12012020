@@ -2,6 +2,7 @@ body{
     width: 100%;
     margin: auto;
     font-family: 'Roboto', sans-serif;
+    position: relative;
 }
 
 .spinner {
@@ -21,13 +22,13 @@ body{
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
-  }
+}
 
-  @keyframes opacity {
-      0% { opacity: 100%;}
-      95% { opacity: 100%;}
-      100% { opacity: 0;}
-  }
+@keyframes opacity {
+    0% { opacity: 100%;}
+    95% { opacity: 100%;}
+    100% { opacity: 0;}
+}
 
 main {
     opacity:1;
@@ -118,7 +119,6 @@ header{
     font-size: 24px;
 }
 
-
 .card {
     flex: 1;
     padding: 0.9rem;
@@ -176,16 +176,7 @@ header{
     to {
       width: 18%;
     }
-  }
-  @keyframes spinner-rotate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
+}
 
 @keyframes fadein {
     from {
@@ -227,13 +218,11 @@ h3 {
     font-weight: 800;
 }
 
-
 .check {
     font-size: 1.5em;
     color: #FFF;
     animation: spinner-rotate 0.5s;
 }
-
 
 .bt{
     display: flex;
@@ -275,9 +264,9 @@ h3 {
     display: inline;
     position: relative;
     right: 10px;
-    font-size: 15px;
-    width: 20px;
-    height: 20px;
+    font-size: 17px;
+    width: 25px;
+    height: 25px;
     color: white;
     background-color: rgb(147, 86, 220);
     border-radius: 60px;
@@ -286,8 +275,8 @@ h3 {
 
 .num p{
     margin: auto;
-    margin-right: 1px;
-    margin-top: 1px;
+    margin-right: 1.5px;
+    margin-top: 2px;
 }
 
 .un{
