@@ -12,7 +12,23 @@
 .spinner{
     display: unset;
     top: 8%;
-    right: 36%;
+    right: 44%;
+}
+
+@media screen and (max-width: 1050px){
+    .spinner{
+        display: unset;
+        top: 8%;
+        right: 42%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .spinner{
+        display: unset;
+        top: 8%;
+        right: 40%;
+    }
 }
 
 .bt {

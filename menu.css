@@ -76,7 +76,7 @@ body{
     display: inline;
     position: absolute;
     top: 35px;
-    left: 300px;
+    left: 85%;
     font-size: 25px;
 }
 
@@ -103,7 +103,7 @@ body{
     margin-left: auto;
     margin-right: auto;
     line-height: 10px;
-    margin-top: 12px;
+    margin-top: 17px;
     background-color: #ffffff;
     border-radius: 15px;
     padding-left: 10px;
@@ -183,7 +183,11 @@ body{
     transition: width 0.3s linear 0s;
 }
 
-.text_plat span {
+.partie_d{
+    position: relative;
+}
+
+.partie_d span {
     border-radius: 50px;
     background-color: #99e2d0;
     color: #ffffff;
@@ -191,8 +195,7 @@ body{
     top: 25px;
     visibility: visible;
     transition: margin 0.3s linear 0s;
-    left: 80%;
-    margin-left: 53px;
+    right: 41%;         
 }
 
 .partie_d{
