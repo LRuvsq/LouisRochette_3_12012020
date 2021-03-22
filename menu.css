@@ -15,7 +15,7 @@ header a{
     position: absolute;
     left: 20px;
     color: #000000;
-    top: 28px;
+    top: 25px;
 }
 
 .logo{
@@ -307,6 +307,12 @@ body{
 }
 
 .text_plat p {
+    font-size: 14px;
+    padding-right: 10px;
+    margin-top: 10px;
+}
+
+.g_prix strong {
     font-size: 14px;
     padding-right: 10px;
     margin-top: 10px;
