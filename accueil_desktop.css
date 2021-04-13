@@ -82,6 +82,16 @@ footer{
     align-items: center;
 }
 
+@media screen and (max-width: 1200px){         
+    .bloc_02 {
+        width: 80%;
+    }
+}
 
+@media screen and (max-width: 1000px){         
+    .bloc_02 {
+        width: 100%;
+    }
+}
 
 
