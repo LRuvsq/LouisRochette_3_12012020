@@ -1,3 +1,18 @@
+header{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+} 
+
+main{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}  
+
+.bloc_menu{
+    padding-left: 5%;
+}
 
 .logo img {
     width: 15%;
@@ -22,11 +37,12 @@
     display: flex;
     flex-direction: column;
     margin-top: 94px;
+    padding-left: 7%;
 }
 
 .nom_rest {
     top: 250px;
-    left: 300px;
+    left: 238px;
     width: 50%;
 }
 
@@ -47,4 +63,31 @@ footer{
 
 footer img {
     width: 13%;
+}
+
+@media screen and (max-width: 1073px){
+    .bloc_02 {
+        padding-left: 23%;
+    }
+}
+
+
+@media screen and (max-width: 1073px){
+    .nom_rest i {
+        top: 36px;
+        font-size: 23px;
+    }
+}
+
+@media screen and (max-width: 1073px){         
+    .nom_rest p {
+        left: -102px;
+        font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 867px){
+    .bloc_02 {
+        padding-left: 15%;
+    }
 }
