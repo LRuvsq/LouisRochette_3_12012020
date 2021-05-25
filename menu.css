@@ -83,7 +83,6 @@ body{
 .nom_rest p {
     display: inline;
     position: absolute;
-    top: px;
     left: 20px;
     font-size: 28px;
     font-family: 'Shrikhand', cursive;
@@ -138,7 +137,6 @@ body{
     font-size: 17px;
     margin-bottom: 3px;
     padding-right: 65px;
-    wrap: no-wrap;
     white-space: nowrap;
 }
 
@@ -262,7 +260,7 @@ body{
         opacity: 0;
      }
      100% {
-         margin-top: 12;
+         margin-top: 12px;
          opacity: 1;
      }
 }
@@ -273,7 +271,7 @@ body{
        opacity: 0;
      }
      100% {
-         margin-top: 12;
+         margin-top: 12px;
          opacity: 1;
      }
  }
@@ -284,7 +282,7 @@ body{
        opacity: 0;
      }
      100% {
-         margin-top: 12;
+         margin-top: 12px;
          opacity: 1;
      }
  }
