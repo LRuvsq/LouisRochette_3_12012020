@@ -88,17 +88,19 @@ body{
     font-family: 'Shrikhand', cursive;
 }
 
-.text_plat strong p {
+.titre_plat{
     font-size: 17px;
     margin-bottom: 3px;
-    padding-right: 65px;
+    visibility: visible;
 }
 
 .text_plat{
+    width: 100%;
+    max-width: 360px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 90%;
+    height: 70px;
     margin-left: auto;
     margin-right: auto;
     line-height: 10px;
@@ -109,39 +111,30 @@ body{
     box-shadow: 0px 2px 3px 2px rgb(221, 216, 216);
     opacity: 0;
     position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
 }
 
-.text_plat {
-    line-height: 15px;
-}
 
 .partie_g{
     width: 100%;
     transition: width 0.7s;
+    padding-top: 11px;
+    line-height: 18px;
 }
 
 .g_prix{
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100%;   
 }
 
-.text_plat p {
-    padding-bottom: 2px;
-}
-
-.text_plat strong p {                            
-    font-size: 17px;
+.text_plat .titre_plat{                            
+    font-size: 16px;
     margin-bottom: 3px;
     padding-right: 65px;
+    width: 100%; 
+    overflow: hidden;
     white-space: nowrap;
-}
-
-.text_plat:hover .g_prix {
-    display: flex;
+    text-overflow: ellipsis; 
 }
 
 .text_plat:hover .g_prix {
@@ -162,7 +155,8 @@ body{
     width: 20%;
 }
 
-.text_plat:hover .plat_name{
+
+.text_plat:hover .titre_plat{
     display: flex;
     white-space: nowrap;
     overflow: hidden;
@@ -195,7 +189,7 @@ body{
     color: #ffffff;
     position: absolute;
     top: 25px;
-    visibility: visible;
+    visibility: hidden;
     transition: margin 0.3s linear 0s;
     right: 41%;         
 }
@@ -208,7 +202,7 @@ body{
     font-weight: 900;
 }
 
-.text_plat:hover span
+.text_plat:hover i
 {
     margin-left: 30px;
     visibility: visible;
@@ -216,7 +210,7 @@ body{
     animation-delay: 0.2s;
 }
 
-.text_plat span{
+.text_plat i{
     margin-left: 53px;
     visibility: hidden;
 }
@@ -229,6 +223,8 @@ body{
         transform: rotate(360deg);
     }
 }
+
+
 
 .un{
     animation: retard 0.6s;
@@ -314,10 +310,12 @@ body{
     margin-top: 10px;
 }
 
-.g_prix strong {
-    font-size: 14px;
+
+.g_prix strong{
+
+    padding-top: 10px;
     padding-right: 10px;
-    margin-top: 10px;
+
 }
 
 .bouton{

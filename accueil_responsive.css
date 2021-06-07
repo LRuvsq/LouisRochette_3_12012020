@@ -149,7 +149,6 @@ header{
     border-radius: 20px;
     margin: 1rem auto;
     display: flex;
-    justify-content: rà;
 }
 
 .plat:hover .animation_menu {
@@ -362,6 +361,7 @@ h3 {
     left: 100px;
     font-size: 25px;
     color: black;
+    background-image: linear-gradient(rgb(221,110,218) ,rgb(161,91,220));
 }
 
 .jauge_remplissage i:hover::before{
@@ -370,10 +370,6 @@ h3 {
     color: violet;
     cursor: pointer;
     height: 100%;
-}
-
-.text_rest i{
-    color: linear-gradient(rgb(221,110,218),rgb(161,91,220));
 }
 
 @media screen and (max-width: 350px)
